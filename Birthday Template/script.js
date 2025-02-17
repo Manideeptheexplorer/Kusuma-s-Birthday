@@ -1,4 +1,24 @@
 
+const numStars = 100; 
+const starsContainer = document.querySelector('.stars');
+
+for (let i = 0; i < numStars; i++) {
+  const star = document.createElement('div');
+  star.classList.add('star');
+  
+  // Random values for each star
+  const tailLength = (Math.random() * (7.5 - 5) + 5).toFixed(2) + "em";
+  const topOffset = Math.floor(Math.random() * 100) + "vh";
+  const fallDuration = (Math.random() * (12 - 6) + 6).toFixed(1) + "s";
+  const fallDelay = (Math.random() * 10).toFixed(1) + "s";
+
+  star.style.setProperty('--star-tail-length', tailLength);
+  star.style.setProperty('--top-offset', topOffset);
+  star.style.setProperty('--fall-duration', fallDuration);
+  star.style.setProperty('--fall-delay', fallDelay);
+
+  starsContainer.appendChild(star);
+}
 
 const photos = document.querySelectorAll('.photo');
 const videoWrapper = document.querySelector('.video-wrapper');
