@@ -143,6 +143,11 @@ body {
   animation: tada 1s ease-in-out;
 }
 
+.video{
+  width: 300px;
+  height: auto;
+}
+
 
 
 
