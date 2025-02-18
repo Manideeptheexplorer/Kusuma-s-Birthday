@@ -203,8 +203,8 @@ body {
 }
 
 .photo {
-  width: 250px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
